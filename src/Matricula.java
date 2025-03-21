@@ -1,26 +1,21 @@
 public class Matricula {
-    private int numeroDaMateria;
+    private int numMatricula;
 
-    public Matricula(int numeroDaMateria) {
-        this.numeroDaMateria = numeroDaMateria;
+    public Matricula(int numMatricula) {
+        this.numMatricula = numMatricula;
     }
 
-    public int getNumeroDaMateria() {
-        return numeroDaMateria;
+    public int getNumMatricula() {
+        return numMatricula;
     }
 
-    public void setNumeroDaMateria(int numeroDaMateria) {
-        this.numeroDaMateria = numeroDaMateria;
+    public void setNumMatricula(int numMatricula) {
+        this.numMatricula = numMatricula;
     }
 
     @Override
     public String toString() {
-        return "Matricula [numeroDaMateria=" + numeroDaMateria + ", getNumeroDaMateria()=" + getNumeroDaMateria()
-                + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-                + "]";
+        return "Matricula [numMatricula=" + numMatricula + "]";
     }
-
-    
-
     
 }

@@ -1,14 +1,15 @@
 public class Aluno {
     private String nome, sobrenome;
-    private Matricula Matricula;//compodicao
-    private Materia materia;//associacao
-    private Endereco endereco;//agregacao
+    private Matricula matricula; //composição
+    private Materia materia; //associação
+    private Endereco endereco; // Agregação
 
-    public Aluno(String nome,String sobrenome, Endereco endereco2, Materia materia2){
+    public Aluno(String nome, String sobrenome, Endereco endereco, Materia materia){
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.Matricula = new Matricula(1);
+        this.matricula = new Matricula(1);
         this.endereco = endereco;
+        this.materia = materia;
     }
 
     public String getNome() {
@@ -28,11 +29,11 @@ public class Aluno {
     }
 
     public Matricula getMatricula() {
-        return Matricula;
+        return matricula;
     }
 
     public void setMatricula(Matricula matricula) {
-        Matricula = matricula;
+        this.matricula = matricula;
     }
 
     public Materia getMateria() {
@@ -50,17 +51,19 @@ public class Aluno {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
     public void setRua(String rua){
         endereco.setRua(rua);
     }
+
     public String getRua(){
         return endereco.getRua();
     }
 
     @Override
     public String toString() {
-        return "Aluno [nome=" + nome + ", sobrenome=" + sobrenome + ", Matricula=" + Matricula + ", materia=" + materia
-                + ", endereco=" + endereco + "]";
+        return "\nAluno [nome=" + nome + ", sobrenome=" + sobrenome + "\n   " + matricula + "\n   " + materia
+        + "\n   " + endereco + "]";
     }
     
 }
