@@ -1,9 +1,6 @@
  package exercicio2;
-// import java.util.ArrayList;
-// import java.util.List;
-
-import java.util.ArrayList;
-
+ import java.util.ArrayList;
+ import java.util.List;
 // import Aluno;
 // import Endereco;
 // import Materia;
@@ -64,5 +61,35 @@ public class App {
         // Contato novoContato = new Contato("josias", "2131232");
         // agenda.adicionarContato(novoContato);
         // System.out.println(agenda);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Produto produto1 = new Produto("produto1", 10.5f);
+        Produto produto2 = new Produto("produto2", 100.5f);
+        Produto produto3 = new Produto("produto3", 1000.5f);
+        Produto produto4 = new Produto("produto4", 10000.5f);
+
+        CadastroProdutos estoque = new CadastroProdutos (new ArrayList<>());
+        estoque.adicionarProduto(produto1);
+        estoque.adicionarProduto(produto2);
+        estoque.adicionarProduto(produto3);
+        estoque.adicionarProduto(produto4);
+        System.out.println(estoque);
+
+        estoque.removerProduto(produto3);
+        System.out.println(estoque);
+
+        
     }
 }
