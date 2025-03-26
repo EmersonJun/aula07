@@ -1,9 +1,12 @@
- package exercicio2;
+ package exercicio3;
  import java.util.ArrayList;
  import java.util.List;
 // import Aluno;
 // import Endereco;
 // import Materia;
+
+import exercicio2.CadastroProdutos;
+import exercicio2.Produto;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -75,21 +78,51 @@ public class App {
 
 
 
-        Produto produto1 = new Produto("produto1", 10.5f);
-        Produto produto2 = new Produto("produto2", 100.5f);
-        Produto produto3 = new Produto("produto3", 1000.5f);
-        Produto produto4 = new Produto("produto4", 10000.5f);
+        // Produto produto1 = new Produto("produto1", 10.5f);
+        // Produto produto2 = new Produto("produto2", 100.5f);
+        // Produto produto3 = new Produto("produto3", 1000.5f);
+        // Produto produto4 = new Produto("produto4", 10000.5f);
 
-        CadastroProdutos estoque = new CadastroProdutos (new ArrayList<>());
-        estoque.adicionarProduto(produto1);
-        estoque.adicionarProduto(produto2);
-        estoque.adicionarProduto(produto3);
-        estoque.adicionarProduto(produto4);
-        System.out.println(estoque);
+        // CadastroProdutos estoque = new CadastroProdutos (new ArrayList<>());
+        // estoque.adicionarProduto(produto1);
+        // estoque.adicionarProduto(produto2);
+        // estoque.adicionarProduto(produto3);
+        // estoque.adicionarProduto(produto4);
+        // System.out.println(estoque);
 
-        estoque.removerProduto(produto3);
-        System.out.println(estoque);
+        // estoque.removerProduto(produto3);
+        // System.out.println(estoque);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Funcionario funcionario1 = new Funcionario("pedro", "123", "tester", 22);
+        Funcionario funcionario2 = new Funcionario("jose", "153", "gerente", 22);
+        Funcionario funcionario3 = new Funcionario("joao", "143", "subgerente", 22);
+        Funcionario funcionario4 = new Funcionario("ped", "126", "tester", 22);
         
+        Departamento departamento1 = new Departamento("adm", new ArrayList<>());
+        Departamento departamento2 = new Departamento("adm", new ArrayList<>());
+
+        Empresa empresa = new Empresa(new ArrayList<>());
+
+        empresa.adicionarDepartamento(departamento2);
+        empresa.adicionarDepartamento(departamento1);
     }
 }
